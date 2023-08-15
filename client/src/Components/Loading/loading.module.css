@@ -1,0 +1,22 @@
+/* loading.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loadingGif {
+  max-width: 150px; /* Ajusta el tamaño según necesites */
+  animation: spin 2s linear infinite; /* Agrega una animación de rotación */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+}
+
+

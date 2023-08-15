@@ -1,0 +1,36 @@
+/* pagination.module.css */
+
+.containerd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button_pag {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 8px;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .button_pag:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pag_input {
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+  
+  /* Agrega más estilos según necesites */
+  
