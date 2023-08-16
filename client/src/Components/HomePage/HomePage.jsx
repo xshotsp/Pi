@@ -9,8 +9,7 @@ import { orderRecipes, filterRecipes,recipesDB,recipesLocales,recipes } from "..
 
 export function Home() {
   const dispatch = useDispatch();
-  const [loading,setLoading]=useState(false);
-  const [recipesLoaded, setRecipesLoaded] = useState(true);
+  const [loading,setLoading]=useState(true);
 
   const handleDispatch = async(e) => {
     setLoading(true)
@@ -38,7 +37,7 @@ export function Home() {
     if(recipesAll.length===0){
       setLoading(false)
     }else{
-      setLoading(false)
+      setLoading(true)
     }
   },[recipesAll]);
 

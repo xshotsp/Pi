@@ -1,0 +1,61 @@
+/* about.module.css */
+
+.containert {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Agrega dirección de columna */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("../../assets/backAbout.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0, 0.6);
+  }
+  
+  .h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .content_data {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    background-color: rgba(254, 153, 32, 0.8);
+    margin-top: 60px; /* Añade un margen superior para separar el contenido del título */
+  }
+  
+  .content_data p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .btnHome {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; /* Añade padding al botón */
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    background-color:rgb(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px; /* Agrega bordes redondos */
+    cursor: pointer;
+  }
+  
+  .btnHome:hover {
+    background-color:  rgba(254, 153, 32,);
+    color: #ffffff;
+  }

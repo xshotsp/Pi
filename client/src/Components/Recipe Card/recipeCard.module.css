@@ -1,69 +1,80 @@
-
-
 .container {
-  border: 1px solid #ccc;
+  background-color: rgb(245, 163, 0, 0.5);
   border-radius: 8px;
-  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px; /* Reducción del padding */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.2s ease-in-out;
+  max-width: 300px; /* Reducción del ancho máximo */
+  margin: 10px; /* Añadido margen para separar las tarjetas */
 }
 
 .container:hover {
-  background-color: #f4f4f4;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .content_name {
-  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 10px;
-  color: #333; /* Color del nombre */
-  font-size: 18px;
+  color: #000000; /* Color del título en negro */
 }
 
 .content_img_diets {
   display: flex;
+  flex-direction: column; /* Cambio de dirección para organizar elementos */
   align-items: center;
-  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .content_img {
-  flex: 1;
+  text-align: center;
 }
 
 .content_img img {
   max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+.content_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px; /* Cambio de margen para separar del título */
+}
+
+.content_health {
   margin-bottom: 10px;
 }
 
-.content_diets {
-  flex: 2;
-  text-align: right;
+.content_health h6 {
+  margin: 0;
 }
 
-.health_score {
+.content_health p {
   margin: 0;
   font-size: 14px;
-  color: #009900; /* Color del puntaje de salud */
-}
-
-.id {
-  margin: 0;
-  font-size: 14px;
-  color: #666; /* Color del ID */
-}
-
-.diet_title {
-  margin: 0;
-  margin-top: 10px;
-  font-size: 14px;
+  color: #000000;
   font-weight: bold;
-  color: #555; /* Color del título de dietas */
 }
 
-.diet_name {
+.content_diets h3 {
+  margin: 0 0 5px 0;
+  color: #000000; /* Color del título de dietas en negro */
+}
+
+.content_diets ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content_diets li {
   font-size: 14px;
-  color: #888; /* Color del nombre de dietas */
+  margin-bottom: 3px;
+  text-align: justify;
+  color: #000000; /* Color del texto en negro */
+  font-weight: bold; /* Añade negrita al texto */
 }

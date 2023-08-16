@@ -21,7 +21,7 @@ export default function About() {
         <div className={s.logos}>
         </div>
         <Link to="/home">
-        <button>Home</button>
+        <button className={s.btnHome}>Home</button>
       </Link>
       </div>
     </div>

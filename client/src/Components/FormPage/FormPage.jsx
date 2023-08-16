@@ -91,57 +91,77 @@ const FormPage = () => {
 
   return (
     <div className={s.container}>
-      <h1>Crear Nueva Receta</h1>
-      <form className={s.form} onSubmit={handleSubmit}>
-        <div className={s.formGroup}>
-          <label htmlFor="name">Nombre</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
-          {errors.name && <p className={s.error}>{errors.name}</p>}
-        </div>
+      <div className={s["form-wrapper"]}>
+        <h1 className={s.h1}>Crear Nueva Receta</h1>
+        <form className={s.form} onSubmit={handleSubmit}>
+          <div className={s.formRow}>
+            <div className={s.formGroup}>
+              <label htmlFor="name">Nombre</label>
+              <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
+              {errors.name && <p className={s.error}>{errors.name}</p>}
+            </div>
 
-        <div className={s.formGroup}>
-          <label htmlFor="summary">Resumen del Plato</label>
-          <textarea id="summary" name="summary" value={formData.summary} onChange={handleChange} />
-          {errors.summary && <p className={s.error}>{errors.summary}</p>}
-        </div>
+            <div className={s.formGroup}>
+              <label htmlFor="summary">Resumen del Plato</label>
+              <textarea id="summary" name="summary" value={formData.summary} onChange={handleChange} />
+              {errors.summary && <p className={s.error}>{errors.summary}</p>}
+            </div>
+          </div>
 
-        <div className={s.formGroup}>
-          <label htmlFor="healthScore">Nivel de Comida Saludable (Health Score)</label>
-          <input type="number" id="healthScore" name="healthScore" value={formData.healthScore} onChange={handleChange} />
-          {errors.healthScore && <p className={s.error}>{errors.healthScore}</p>}
-        </div>
+          <div className={s.formRow}>
+            <div className={s.formGroup}>
+              <label htmlFor="healthScore">Nivel de Comida Saludable (Health Score)</label>
+              <input
+                type="number"
+                id="healthScore"
+                name="healthScore"
+                value={formData.healthScore}
+                onChange={handleChange}
+              />
+              {errors.healthScore && <p className={s.error}>{errors.healthScore}</p>}
+            </div>
 
-        <div className={s.formGroup}>
-          <label htmlFor="steps">Paso a Paso</label>
-          <textarea id="steps" name="steps" value={formData.steps} onChange={handleChange} />
-          {errors.steps && <p className={s.error}>{errors.steps}</p>}
-        </div>
+            <div className={s.formGroup}>
+              <label htmlFor="steps">Paso a Paso</label>
+              <textarea id="steps" name="steps" value={formData.steps} onChange={handleChange} />
+              {errors.steps && <p className={s.error}>{errors.steps}</p>}
+            </div>
+          </div>
 
-        <div className={s.formGroup}>
-          <label htmlFor="image">Imagen</label>
-          <input type="text" id="image" name="image" value={formData.image} onChange={handleChange} />
-          {errors.image && <p className={s.error}>{errors.image}</p>}
-        </div>
+          <div className={s.formRow}>
+            <div className={s.formGroup}>
+              <label htmlFor="image">Imagen</label>
+              <input type="file" accept="image/*" id="image" name="image" value={formData.image} onChange={handleChange} />
+              {errors.image && <p className={s.error}>{errors.image}</p>}
+            </div>
 
-        <div className={s.formGroup}>
-          <label htmlFor="diets">Tipos de Dieta</label>
-          <select multiple id="diets" name="diets" value={formData.diets} onChange={handleChange}>
-            <option value="dieta1">Dieta 1</option>
-            <option value="dieta2">Dieta 2</option>
-          </select>
-          {errors.diets && <p className={s.error}>{errors.diets}</p>}
-        </div>
+            <div className={s.formGroup}>
+              <label htmlFor="diets">Tipos de Dieta</label>
+              <select
+                className={s.selectField}
+                multiple
+                id="diets"
+                name="diets"
+                value={formData.diets}
+                onChange={handleChange}
+              >
+                <option value="dieta1">Dieta 1</option>
+                <option value="dieta2">Dieta 2</option>
+              </select>
+              {errors.diets && <p className={s.error}>{errors.diets}</p>}
+            </div>
+          </div>
 
-        <button type="submit" className={s.submitButton}>
-          Crear Receta
-        </button>
-        <Link to="/home" className={s.btnHome}>
-        Volver a Home
-      </Link>
-        
-      </form>
+          <button type="submit" className={s.submitButton}>
+            Crear Receta
+          </button>
+          <Link to="/home" className={s.btnHome}>
+            Volver a Home
+          </Link>
+        </form>
+      </div>
     </div>
   );
 }
 
-export default FormPage
+export default FormPage;

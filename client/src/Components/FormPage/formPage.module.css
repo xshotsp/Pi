@@ -1,0 +1,94 @@
+/* formPage.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../../assets/backForm.jpg"); /* Cambia la ruta por la de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0,0.1);
+  }
+  .h1{
+    color: #000000;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    flex-basis: calc(50% - 10px);
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .inputField,
+  .selectField {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputField:focus,
+  .selectField:focus {
+    border-color: #007bff;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .submitButton {
+    background-color: rgba(186, 107, 22, 0.945);
+    color: #ffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #FE9920;
+  }
+  
+  .btnHome {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FE9920;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .btnHome:hover {
+    color: #0056b3;
+  }
+  

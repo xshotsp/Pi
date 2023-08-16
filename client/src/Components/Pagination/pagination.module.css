@@ -1,36 +1,45 @@
 /* pagination.module.css */
 
 .containerd {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .button_pag {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 4px 8px;
-    color: #007bff;
-    transition: color 0.3s ease;
-  }
-  
-  .button_pag:disabled {
-    color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .pag_input {
-    width: 40px;
-    text-align: center;
-    font-size: 14px;
-    padding: 4px 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 0 10px;
-  }
-  
-  /* Agrega más estilos según necesites */
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button_pag {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #FE9920;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.button_pag:hover {
+  background-color: #FFB84D;
+}
+
+.pag_input {
+  width: 40px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.pag_input:focus {
+  border-color: #007bff;
+}
+
+span {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #ffffff;
+}

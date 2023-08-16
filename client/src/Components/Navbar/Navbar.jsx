@@ -7,9 +7,7 @@ export default function Navbar() {
   return (
     <nav className={s.container}>
       <div className={s.links}>
-        <Link to="/home" className={s.link}>
-          Home
-        </Link>
+    
         <Link to="/formPage" className={s.link}>
           Create recipe
         </Link>
